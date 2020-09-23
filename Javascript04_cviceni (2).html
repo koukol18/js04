@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">V&#283;cek Franti�ek Mgr.</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">1417100.00000000</mso:Order>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">V&#283;cek Franti�ek Mgr.</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x0101008BC022814DA6864A86EB89B0A1AEE92F</mso:ContentTypeId>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <h1>Javascript 04 - objekty - cvičení</h1>
+
+    <script>
+    "use strict"
+
+    /* ======================================================
+        Úkol 1 - Ještě trocha té matematiky
+        Vytvořte skript, který zpracovává pole čísel. Program zpracuje všechna vložená čísla a zjistí jejich průměr.
+        Následně spočítá, kolik čísel je menší (včetně rovnajících se) a kolik je větších než průměr.
+
+        Vstup: 
+            5, 10, 6, -7, 8, 18, 23     
+        Výstup:
+            Průměrná hodnota: XX
+            Počet čísel větších než průměr: X
+            Počet čísel menších nebo rovno průměru: X
+    */
+    console.log("Úkol 1");
+    // Doplňte zdrojový kód
+    console.log("-------------");
+
+    /* =======================================================
+        Úkol 2 - Seznam žáků
+        Vytvořte skript, který zpracovává pole žáků a pole známek, v poli žáků je jméno žáka, 
+        a v poli známek je jeho známka z předmětu WD. Vypište do konzole žáka a jeho známku.
+        
+        Vstup: 
+            Žáci: Petr, Arnold, Bill, Gandalf
+            Známky: 1, 3, 2, 5
+        Výstup:
+            Jméno: Petr, Známka z WD: 1
+            ...
+            Jméno: Gandalf, Známka z WD: 5
+    */
+    console.log("Úkol 2");
+    // Doplňte zdrojový kód
+    console.log("-------------");
+
+    /* ======================================================
+        Úkol 3 - Pole s násobky
+        Vytvořte funkci, která má dva parametry - násobek a délka. Tato funkce
+        po spuštění vygeneruje a vrátí pole, které bude obsahovat všechny násobky parametru násobek,
+        počet těchto násobku bude záležet na parametru délka, vstup / výstup.
+
+        Vstup: 
+            poleNasobku(7, 5)
+            poleNasobku(12, 10)
+
+        Výstup:
+            [7, 14, 21, 28, 35]
+            [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
+    */
+    console.log("Úkol 3");
+    // Doplňte zdrojový kód
+    console.log("-------------");
+
+
+    /* ======================================================
+        Úkol 4 - Objekt písnička - vlastnosti
+        Vytvořte objekt, který se jmenuje song, objekt bude obsahovat následující informace.
+        Název písničky, název interpreta, název alba, rok vydání alba, žánr a délku v sekundách.
+
+        Vstup: 
+            Jméno písničky - Toxicity
+            Jméno interpreta - System Of A Down
+            Název alba - Toxicity
+            Datum vydání - 2001
+            Žánry - Progresivní metal, Alternativní metal, metal
+            Délka - 220 sekund
+
+        Výstup:
+            console.log(song);
+           
+    */
+    console.log("Úkol 4");
+    // Doplňte zdrojový kód
+    console.log("-------------");
+
+        /* ======================================================
+        Úkol 5 - Objekt písnička - metoda
+        Rozšiřte objekt song o metodu přehrát, metoda obsahuje 3 textové informace (viz výstup).
+    
+        Přidejte 5 vteřinové zpoždění, než se objeví text písnička skončila.
+        Použijte setTimeout(); - https://javascript.info/settimeout-setinterval
+
+        Vstup: 
+            song.prehrat();
+
+        Výstup:
+            Písnička "Název písničky" začala hrát...
+            Conversion, software version 7.0...
+            Písnička skončila.
+           
+    */
+    console.log("Úkol 5");
+    // Doplňte zdrojový kód
+    console.log("-------------");
+
+            /* ======================================================
+        Úkol 6 - Jukebox
+        Vytvořte objekt jukebox, který přehrává písničky (objekty).
+        Objekt jukebox má následující vlastnosti - jméno jukeboxu, index právě přehrávané písničky a pole písniček.
+            Vlastnosti
+              Jméno - wdBox
+              Právě hraje písnička - 0
+              Písničky v zásobíku - (Objekt)Toxicity, (Objekt)Další písnička dle vašeho výběru
+
+            Metody
+              start() - "Zapne" jukebox, začne se přehrávat první písnička (viz předchozí akce), 
+                        po 5s začne hrát další písnička, dokud nepřehraje všechny písničky v zásobníku.
+              reset() - Nastaví aktuální písničku na 0
+              next() - posune index právě hrané písničky o 1 dozadu (na konci se vrátí na začátek)
+              prev() - posune index právě hrané písničky o 1 dopředu (na začátku se vrátí na konec)
+
+              Použijte setInterval(); - https://javascript.info/settimeout-setinterval
+              Použijte clearInterval() - abyste ukončili smyčku...
+
+        Vstup: 
+            jukebox.start();
+        Výstup:
+            Právě startuje Jukebox "název jukeboxu"
+
+            Písnička "Název písničky" začala hrát...
+            Conversion, software version 7.0...
+            Písnička skončila.
+
+            Písnička "Název písničky" začala hrát...
+            Very deep lyrics of your favourite thrashy song...
+            Písnička skončila.
+
+            Jukebox právě dohrál...
+           
+    */
+    console.log("Úkol 6");
+    // Doplňte zdrojový kód
+    console.log("-------------");
+
+
+         /* ======================================================
+        Úkol 7 - DPH na pivo
+        Napište funkci, která by pomohla hospodským vypočítat správnou cenu piva!
+        Použijte následující tabulku na výpočet: https://img.cncenter.cz/img/18/full/6167228_v0.jpg?v=0
+        Pivo může mít DPH 10%, 15% nebo 21% v závislosti na tom , kde jste ho zakoupili, v jakém je obalu.
+        Funkce má parametr objekt pivo, a vrací výslednou cenu včetně započtené správné sazby DPH.    
+    
+       
+        Vstup: 
+            PIVO1
+            název - Pilsner Urquell
+            cena bez DPH - 45 Kč
+            alkoholicke - ano
+            zakoupeno v - restaurace
+            obal - sklenička
+
+            PIVO2
+            název - Budějovický budvar
+            cena bez DPH - 36 Kč
+            alkoholiké - ano
+            zakoupeno v - stánek
+            obal - kelímek
+
+            PIVO3
+            název - Birrell
+            cena bez DPH - 30 Kč
+            alholicke - ne
+            zakoupeno - restaurace
+            obal - láhev
+
+            PIVO4
+            název - Pilsner Urquell
+            cena bez DPH - 45 Kč
+            alkoholicke - ano
+            zakoupeno v - restaurace
+            obal - láhev
+
+        Výstup:
+            Cena s DPH PIVO1 - 49,50 Kč
+            Cena s DPH PIVO2 - 43,56 Kč
+            Cena s DPH PIVO3 - 33,00 Kč
+            Cena s DPH PIVO4 - 54,45 Kč
+           
+    */
+    console.log("Úkol 7");
+    // Doplňte zdrojový kód
+    console.log("-------------");
+
+        /* ======================================================
+        Úkol 8 - D&D - tvorba postavy
+        Vytvořte objekt vaší postavy do D&D, vaše postava bude mít následující vlastnosti a metody.
+            Vlastnosti:
+             Jméno: NičitelXXX
+             Povolání: Paladin
+             Útočná síla: 5
+             Šance na kritický úder: 1.15
+             Život: 500
+
+            Metody:
+             Útok - metoda vrátí sílu útoku (útočná síla) s možnostní kritického úderu (1.15 = 15% šance)
+             Pozdrav - Paladin NičitelXXX tě zdraví!
+             Uber zdraví - ubere hrdinovi počet bodů zdraví dle parametru
+             Kontrola života - všechny nejdříve zavolají metodu kontrolu života, která ověří, že je hrdina naživu.
+
+        (Bonus: použijte třídy - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+    
+        Vstup: 
+            hrdina.pozdrav();
+            hrdina.utok();
+            hrdina.utok();
+            hrdina.uberHp(500);
+            hrdina.utok();
+
+        Výstup:
+            Paladin NičitelXXX tě zdraví!
+            NičitelXXX způsobil 5 poškození.
+            NičitelXXX zpusobil 10 poškození (kritický útok).
+            NičitelXXX utrpěl poškožení 500.
+            NičitelXXX nemůže útočit, protože je mrtev.
+           
+    */
+
+    console.log("Úkol 9");
+    // Doplňte zdrojový kód
+    console.log("-------------");
+        /* ======================================================
+        Úkol 9 - D&D - duel
+        Rozšiřte váš skript o možnost duelu. Duel bude nový objekt, který má následující vlastnosti
+
+            Vlastnosti:
+             Hrdinové: [(Objekt) První hrdina, (Objekt) Druhý hrdina]
+             Vítěz duelu: ""
+
+            Metody:
+             Začni duel - vylosuje, který hrdina bude začínat, a začne boj, počítá se útok, a zranění
+                          duel se opakuje dokud jeden z hrdinů nemá počet HP na 0, pak se vyhlásí vítěz.
+             
+  
+        Vstup: 
+            duel.start(hrdina1, hrdina2);
+
+        Výstup:
+            NičitelXXX způsobil 5 poškození.
+            Rambo zpusobil 10 poškození (kritický útok).
+            NičitelXXX způsobil 5 poškození.
+            ...
+            Rambo prohrál, Ničitel zvítězil.
+           
+    */
+    console.log("Úkol 9");
+    // Doplňte zdrojový kód
+    console.log("-------------");
+        /* ======================================================
+        Úkol 10 - Řazení
+        Napište skript, který seřadí javascriptové objekty podle jména kapely.
+        TENTO úkol je náročnější je třeba se hodně zamyslet.
+    
+         Vstup: 
+            const singers = [
+                { name: 'Steven Tyler', band: 'Aerosmith', born: 1948 },
+                { name: 'Karen Carpenter', band: 'The Carpenters', born: 1950 },
+                { name: 'Kurt Cobain', band: 'Nirvana', born: 1967 },
+                { name: 'Stevie Nicks', band: 'Fleetwood Mac', born: 1948 },
+            ];
+
+        Výstup:
+            [
+                { name: 'Steven Tyler', band: 'Aerosmith', born: 1948 },
+                { name: 'Kurt Cobain', band: 'Nirvana', born: 1967 },
+                { name: 'Karen Carpenter', band: 'The Carpenters', born: 1950 },
+                { name: 'Stevie Nicks', band: 'Fleetwood Mac', born: 1948 }
+            ];
+           
+    */
+    console.log("Úkol 10");
+    // Doplňte zdrojový kód
+    console.log("-------------");
+
+    </script>
+    
+</body>
+</html> 
